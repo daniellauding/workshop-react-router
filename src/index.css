@@ -1,3 +1,44 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.song-list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  list-style: none;
+  gap: 32px
+}
+
+.song-list__item {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.song-card {
+  background: #342525;
+  color: #fff;
+  border-radius: 32px;
+  padding: 32px;
+  max-width: 220px;
+}
+
+.song-card a {
+  display: inline-block;
+  margin-top: 32px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
